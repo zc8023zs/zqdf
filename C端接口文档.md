@@ -29,7 +29,6 @@
     }
 }
 ```
-
 ## 用户登录
 
 /{os}/user/login
@@ -325,14 +324,14 @@
     "code": 0,
     "msg": "成功",
     "dataSingle": {
-        "brand_logo": "品牌logo",
-        "brand_name": "品牌名称",
-        "displacement": "车系名称",
-        "is_default": "是否默认",
-        "displacement": "发动机排量",
-        "years": "年份",
-        "description": "款型",
-        "vin": "车辆识别代码"
+        "icon":"店铺封面图",
+        "shop_name":"店铺名称",
+        "star_num":"店铺好评星级",
+        "comment_num":"店铺评论数",
+        "shop_desc":"简介",
+        "full_address":"地址",
+        "url":"二维码地址",
+        "service_hotline":"电话"
     },
     "dataArray": {
         "pageSize": 0,
