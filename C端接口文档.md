@@ -1512,6 +1512,8 @@
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
 | token | 用户凭证 | String | true || 
 | status | 状态 | int | true |全部=0 代付款=1 待安装=2 已完成=3 已取消=4|
+| page | 页 | int | true || 
+| size | 条 | int | true ||  
 
 返回
 
@@ -1666,6 +1668,8 @@
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
 | token | 用户凭证 | String | true || 
 | status | 状态 | String | true |售后申请=0 处理中=1 申请记录=2| 
+| page | 页 | int | true || 
+| size | 条 | int | true ||  
 
 返回
 
@@ -1707,6 +1711,8 @@
 | 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
 | token | 用户凭证 | String | true ||   
+| page | 页 | int | true || 
+| size | 条 | int | true ||  
 
 返回
 
@@ -1950,6 +1956,8 @@
 | 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
 | token | 用户凭证 | String | true ||  
+| page | 页 | int | true || 
+| size | 条 | int | true ||  
 
 返回
 
@@ -2068,7 +2076,198 @@
 }
 ```
 ## 申请提现
+
+/{os}/user/user_extraction
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||  
+| card_id | 银行卡id | int | true ||  
+| amount | 提现金额 | double | true ||  
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [  
+        ]
+    }
+}
+```
 ## 收入明细
+
+/{os}/user/user_amount_record
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||   
+| page | 页 | int | true || 
+| size | 条 | int | true ||   
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [  
+            {
+                "month_str":"月份",
+                "note":"备注/标题",
+                "trade_amount":"发生金额",
+                "trade_time":"交易时间"
+            }
+        ]
+    }
+}
+```
 ## 提现明细
+
+/{os}/user/user_extraction_list
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||    
+| page | 页 | int | true || 
+| size | 条 | int | true ||  
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [  
+            {
+                "month_str":"月份",
+                "note":"备注/标题",
+                "trade_amount":"发生金额",
+                "trade_time":"交易时间"
+            }
+        ]
+    }
+}
+```
 ## 修理厂普通订单
+
+/{os}/user/repair_order_normal
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||    
+| status | 状态 | int | true |全部=0 带安装=1 已完成=2 已取消=3|
+| page | 页 | int | true || 
+| size | 条 | int | true ||    
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [  
+            {
+                "order_sn":"订单号",
+                "order_status":"状态",
+                "order_status_str":"状态名称",
+                "pay_time":"支付时间",
+                "rate_amount":"佣金",
+                "goods":[  //对应商品
+                    {
+                        "goods_thumb":"商品图标",
+                        "goods_name":"商品名称",
+                        "market_price":"商品价格",
+                        "category_name":"商品分类",
+                        "goods_number":"购买数量"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
 ## 修理厂到店技师安装订单
+
+/{os}/user/repair_order_install
+| page | 页 | int | true || 
+| size | 条 | int | true ||  
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||    
+| status | 状态 | int | true |待服务=1 服务中=2 以服务=3|  
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [  
+            {
+                "order_sn":"服务订单号",
+                "order_status":"状态",
+                "order_status_str":"状态名称",
+                "pay_time":"支付时间",
+                "rate_amount":"佣金",
+                "goods":[  //对应商品
+                    {
+                        "goods_thumb":"商品图标",
+                        "goods_name":"商品名称",
+                        "market_price":"商品价格",
+                        "category_name":"商品分类",
+                        "goods_number":"购买数量"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
