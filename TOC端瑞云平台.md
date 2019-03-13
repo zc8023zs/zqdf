@@ -1,4 +1,4 @@
-# 2c商城首页
+# 2c瑞云平台
 ## 首页banner
 
 /{os}/platform/banners

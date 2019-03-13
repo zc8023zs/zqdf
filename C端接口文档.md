@@ -10,6 +10,7 @@
 | veri_code | 图形验证码 | String | true |  |
 | invi_code | 手机验证码 | String | true | 123456 |
 | invi_key | 手机验证码凭证 | String | true |  |
+| veri_key | 手机验证码凭证 | String | true |  |
 
 返回
 
@@ -303,6 +304,37 @@
             {
                 //待定
             }
+        ]
+    }
+}
+```
+## 手选车辆添加
+
+/{os}/user/add_car
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||
+| brand_id | 品牌id | String | true ||
+| displacement_id | 车型配置表排量id | String | true ||
+| years_id | 车型配置表年份id | String | true ||
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [ 
         ]
     }
 }
@@ -850,8 +882,8 @@
     }
 }
 ``` 
-# 个人中心（常规）
-
+# 个人中心
+## 个人中心（常规和修理厂）
 /{os}/user/user_index
 
 输入参数
