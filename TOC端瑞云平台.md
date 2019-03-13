@@ -82,7 +82,7 @@
 | address | 详细地址 | String | true || 
 | business_license | 营业执照 | String | true || 
 | idcard1 | 法人身份证正面 | String | true || 
-| idcard2 | 法人身份证反面 | String | true || 
+| idcard2 | 法人身份证反面 | String | false || 
 
 返回
 
