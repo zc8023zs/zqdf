@@ -489,7 +489,7 @@
 ```
 ## 商品详情
 
-/{os}/user/shop_goods
+/{os}/user/good_details
 
 输入参数
 
@@ -577,7 +577,7 @@
 ```
 ## 店铺活动优惠券领取
 
-/{os}/user/good_shop_coupon
+/{os}/user/received_shop_coupon
 
 输入参数
 
@@ -614,6 +614,7 @@
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
 | token | 用户凭证 | String | true ||
 | good_id | 商品id | String | true ||
+| shop_id | 店铺id | String | true ||
 
 返回
 
@@ -681,7 +682,6 @@
 | 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
 | token | 用户凭证 | String | true ||
-| good_id | 商品id | String | true ||
 
 返回
 
