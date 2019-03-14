@@ -825,7 +825,7 @@
 | token | 用户凭证 | String | true || 
 | addrs | 收货地址 | String | true || 
 | coupon_id | 优惠券 | String | true || 
-| goods | 商品ids | String | true || 
+| goods[] | 商品ids | String[] | true || 
 
 返回
 
