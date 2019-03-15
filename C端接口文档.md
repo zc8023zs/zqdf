@@ -2120,6 +2120,43 @@
     }
 }
 ```
+## 提现对账单
+
+/{os}/user/user_calc_list
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||  
+| page | 页 | int | true || 
+| size | 条 | int | true ||   
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [  
+            {
+                "calc_id":"对账单id",
+                "title":"对账单标题",
+                "order_num":"订单数量",
+                "amount":"合计金额",
+                "is_extraction":"是否提现"    //1=已提 0=未提
+            }
+        ]
+    }
+}
+```
 ## 申请提现
 
 /{os}/user/user_extraction
@@ -2130,7 +2167,7 @@
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
 | token | 用户凭证 | String | true ||  
 | card_id | 银行卡id | int | true ||  
-| amount | 提现金额 | double | true ||  
+| calc_id | 对账单id | int | true ||  
 
 返回
 
