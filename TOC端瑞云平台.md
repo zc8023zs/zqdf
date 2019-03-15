@@ -27,6 +27,47 @@
     }
 }
 ```
+
+## 首页商品列表(产品推荐)
+
+/{os}/platform/order_list
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |  
+| lat | 维度 | String | true ||
+| lng | 经度 | String | true ||
+| search_key | 搜索关键字 | String | false ||
+| page | 页 | int | true || 
+| size | 条 | int | true ||      //首页的取第一页，列表页开始分页
+| brand_id | 品牌 | String | false ||     //首页不传，列表页的检索条件
+| version_id | 车型 | String | false ||   //首页不传，列表页的检索条件
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "",
+    "dataSingle": {
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [
+            {
+                "goods_id":"商品id",
+                "goods_thumb":"商品logo",
+                "goods_name":"商品标题",
+                "shop_id":"店铺id",
+                "shop_name":"店铺名称",
+                "shop_type":"是否自营"
+            }
+        ]
+    }
+}
+```
 ## 首页店铺列表
 
 /{os}/platform/list
