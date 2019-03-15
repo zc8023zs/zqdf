@@ -1146,6 +1146,7 @@
 
 /{os}/user/user_address_update
 
+####备注：原型图此接口是否默认字段冗余，砍掉
 输入参数
 
 | 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
@@ -1157,7 +1158,6 @@
 | city | 城市 | String | true ||  
 | district | 地区 | String | true ||  
 | address | 详细地址 | String | true ||  
-| is_default | 是否默认(0:非,1:是) | String | true ||  
 | address_id | 收货地址id | String | true ||  
 
 
