@@ -1151,7 +1151,15 @@
 | 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |  
 | token | 用户凭证 | String | true ||  
+| consignee | 收货人姓名 | String | true ||  
+| mobile | 手机号码 | String | true ||  
+| province | 省份 | String | true ||  
+| city | 城市 | String | true ||  
+| district | 地区 | String | true ||  
+| address | 详细地址 | String | true ||  
+| is_default | 是否默认(0:非,1:是) | String | true ||  
 | address_id | 收货地址id | String | true ||  
+
 
 返回
 
@@ -1160,14 +1168,6 @@
     "code": 0,
     "msg": "成功",
     "dataSingle": {  
-        "address_id":"是收获地址id",
-        "consignee":"收货人姓名",
-        "mobile":"手机号码",
-        "province":"收货-省",
-        "city":"收货-市",
-        "district":"收货-区",
-        "full_address":"详细地址",
-        "is_default":"是否默认",
     },
     "dataArray": {
         "pageSize": 0,
@@ -1189,7 +1189,6 @@
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |  
 | token | 用户凭证 | String | true ||  
 | address_id | 收货地址id | String | true ||  
-| is_default | 是否默认 | String | true |1=是 0=否| 
 
 返回
 
