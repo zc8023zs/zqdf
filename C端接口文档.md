@@ -1475,16 +1475,25 @@
     "msg": "成功",
     "dataSingle": {
         "order_id": "订单id",
+        "order_sn":"订单号",
+        "order_status":"订单状态",
+        "order_status_str":"订单状态名称",
         "is_credit_del":"销账状态 0=未销账 1=成功",
         "consignee":"收货人姓名",
         "mobile":"收货人电话",
         "full_address":"完整收货地址",
         "repair_name":"修理厂名称",
         "order_sn":"订单号",
-        "order_amount":"应付款金额",
+        "goods_amoun":"商品金额",
         "money_paid":"付款金额",
-        "bonus":"红包金额",
-        "add_time":"下单时间"
+        "bonus":"红包金额", 
+        "add_time":"订单生成时间",
+        "confirm_time":"订单确认时间",
+        "pay_time":"订单支付时间",
+        "shipping_time":"订单配送时间",
+        "cancel_time":"退货申请时间",
+        "cancel_audit_time":"退货审核时间",
+        "cancel_pay_time":"退款时间"
     },
     "dataArray": {
         "pageSize": 0,
@@ -1601,17 +1610,23 @@
     "msg": "成功",
     "dataSingle": { 
         "order_id":"订单id",
-        "status":"订单状态",
-        "status_txt":"订单状态文字",
-        "consignee":"收件人姓名",
-        "mobile":"收件人手机号",
-        "full_address":"详细地址",
-        "repair_name":"修理厂名称", //修理厂名称 判空展示
-        "order_amount":"应付款金额",
+        "order_sn":"订单号",
+        "order_status":"订单状态",
+        "order_status_str":"订单状态名称",
+        "consigne":"收货人姓名",
+        "tel":"收货人电话",
+        "full_address":"收货人地址",
+        "repair_name":"修理厂名称",
+        "goods_amoun":"商品金额",
         "money_paid":"付款金额",
-        "bonus":"红包金额",
-        "add_time": "下单时间",
-        "pay_time": "付款时间"
+        "bonus":"红包金额", 
+        "add_time":"订单生成时间",
+        "confirm_time":"订单确认时间",
+        "pay_time":"订单支付时间",
+        "shipping_time":"订单配送时间",
+        "cancel_time":"退货申请时间",
+        "cancel_audit_time":"退货审核时间",
+        "cancel_pay_time":"退款时间"
     },
     "dataArray": {
         "pageSize": 0,
@@ -1761,7 +1776,7 @@
         "dataList": [ 
             {
                 "comment_rank":"星级", 
-                "content":"评论内容", 
+                "content":"评论内容",        //用户可以看到自己未审核的评论数据
                 "imgs":"评论相册"
             }
         ]
