@@ -8,7 +8,6 @@
 | lat | 维度 | String | true ||
 | lng | 经度 | String | true ||
 | search_key | 搜索关键字 | String | true ||
-| lng | 经度 | String | true ||
 | brand_id | 品牌 | String | true ||
 | version_id | 车型 | String | true ||
 
