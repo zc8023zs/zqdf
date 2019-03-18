@@ -34,8 +34,8 @@
 
 | 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |  
-| lat | 维度 | String | true ||
-| lng | 经度 | String | true ||
+| lat | 维度 | String | false ||
+| lng | 经度 | String | false ||
 | search_key | 搜索关键字 | String | false ||
 | page | 页 | int | true || 
 | size | 条 | int | true ||      //首页的取第一页，列表页开始分页
