@@ -1795,7 +1795,7 @@
 | order_id | 订单id | int | true ||
 | note1 | 申请理由 | String | true ||
 | note2 | 详细说明 | String | true ||
-| img[] | 上传图片 | String[] | true ||
+| imgs | 上传图片 | String[] | true ||
 
 返回
 
