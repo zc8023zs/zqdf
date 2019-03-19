@@ -10,7 +10,7 @@
 | veri_code | 图形验证码 | String | true |  |
 | invi_code | 手机验证码 | String | true | 123456 |
 | invi_key | 手机验证码凭证 | String | true |  |
-| veri_key | 手机验证码凭证 | String | true |  |
+| veri_key | 图形验证码凭证 | String | true |  |
 
 返回
 
