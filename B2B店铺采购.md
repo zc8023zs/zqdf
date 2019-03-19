@@ -101,7 +101,10 @@
 | 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- | 
 | token | 用户凭证 | String | true ||
-| title | 对应车型 | String | true |备注：前台直接输入车型|
+| title | 对应车型 | String | true |备注：通过选择拼接，可修改|
+| brand_id | 品牌id | String | true ||
+| version_id | 车型id | String | true ||
+| brand_id | 分类id | String | true ||
 | num | 数量 | String | true ||
 | note | 描述 | String | true ||
 | shop_name | 店铺名称 | String | true ||
@@ -110,8 +113,9 @@
 | province | 省 | String | true ||
 | city | 市 | String | true ||
 | district | 区 | String | true ||
-| lat | 维度 | String | true ||
-| lng | 经度 | String | true ||
+| lat | 维度 | String | false ||
+| lng | 经度 | String | false ||
+| full_address | 完整地址 | String | false ||   前端可能无法获取经纬度，会将完整地址拼接传入，后台通过地图接口解析经纬度
 | demand_type | 类型 | String | true |求购=1 出售= 2|
 返回
 
@@ -174,7 +178,10 @@
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- | 
 | token | 用户凭证 | String | true ||
 | demand_id | 原需求id | String | true ||
-| title | 对应车型 | String | true |备注：前台直接输入车型|
+| title | 对应车型 | String | true |备注：通过选择拼接，可修改|
+| brand_id | 品牌id | String | true ||
+| version_id | 车型id | String | true ||
+| brand_id | 分类id | String | true ||
 | num | 数量 | String | true ||
 | note | 描述 | String | true ||
 | shop_name | 店铺名称 | String | true ||
@@ -183,8 +190,9 @@
 | province | 省 | String | true ||
 | city | 市 | String | true ||
 | district | 区 | String | true ||
-| lat | 维度 | String | true ||
-| lng | 经度 | String | true ||
+| lat | 维度 | String | false ||
+| lng | 经度 | String | false ||
+| full_address | 完整地址 | String | false ||   前端可能无法获取经纬度，会将完整地址拼接传入，后台通过地图接口解析经纬度
 | demand_type | 类型 | String | true |求购=1 出售= 2|
 返回
 
