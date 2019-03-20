@@ -740,6 +740,37 @@
     }
 }
 ```
+
+## 删除购物项接口
+
+/{os}/user/good_cart_del
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||
+| good_id | 商品id | String | true ||
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [  
+        ]
+    }
+}
+```
 # 购物车
 ## 购物车列表
 
