@@ -219,15 +219,15 @@
                 "name":"大分类，-ABCDEFG……", //热门取-分类
                 "brand_id": "品牌id",
                 "brand_logo": "品牌logo",
-                "brand_name": "阿斯顿·马丁",
+                "brand_name": "大众",
                 "children":[
                     {
                         "brand_id": "品牌id",
-                        "brand_name": "阿斯顿·马丁",
+                        "brand_name": "上汽大众",
                         "children":[
                             {
                                 "brand_id": "品牌id",
-                                "brand_name": "阿斯顿·马丁DB11",
+                                "brand_name": "Polo",
                             }
                         ]
                     }
