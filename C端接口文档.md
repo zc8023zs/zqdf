@@ -368,6 +368,35 @@
     }
 }
 ```
+## 删除车辆接口
+
+/{os}/user/del_car
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||
+| car_id | 车辆id | String | true ||
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [ 
+        ]
+    }
+}
+```
 ## 店铺详情
 
 /{os}/user/shop_info
@@ -874,6 +903,7 @@
     }
 }
 ```
+
 ## 提交订单
 
 /{os}/user/good_order
