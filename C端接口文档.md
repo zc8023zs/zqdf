@@ -192,6 +192,44 @@
     }
 }
 ```
+## 当前车辆详情
+
+/{os}/user/car_detail
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||
+| car_id | 车辆id | int | true ||
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+            "versions": "款型",
+            "description": "车系",
+            "vin": "车架号",
+            "brand_name": "车系-车型",
+            "displacement": "排量",
+            "brand_logo": "品牌logo",
+            "is_default": true,
+            "car_id": "车辆id",
+            "years": "年款"
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [
+        ]
+    }
+}
+```
 ## 车型选择-品牌-车型（含热门品牌）
 
 /{os}/user/brands
