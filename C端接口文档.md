@@ -903,6 +903,41 @@
     }
 }
 ```
+## 去结算
+
+/{os}/user/go_settle_accounts
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||
+| coupon_id | 优惠券id | String | true ||
+| goods[] | 购物车商品id | String[] | true ||
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+        "totalAccount": "商品总金额",
+        "couponAccount": "优惠券抵扣金额",
+        "realAccount": "支付金额",
+        "coupon_id":"优惠券id",
+        "goodsNum":"商品数量"
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [
+        ]
+    }
+}
+```
 
 ## 提交订单
 
