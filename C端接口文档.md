@@ -922,11 +922,11 @@
     "code": 0,
     "msg": "成功",
     "dataSingle": {
-        "totalAccount": "商品总金额",
-        "couponAccount": "优惠券抵扣金额",
-        "realAccount": "支付金额",
+        "goods_amount": "商品总金额",
+        "bonus": "优惠券抵扣金额",
+        "money_paid": "支付金额",
         "coupon_id":"优惠券id",
-        "goodsNum":"商品数量"
+        "good_num":"商品数量"
     },
     "dataArray": {
         "pageSize": 0,
