@@ -951,6 +951,7 @@
 | addrs | 收货地址 | String | true || 
 | coupon_id | 优惠券 | String | true || 
 | goods[] | 商品ids | String[] | true || 
+| note | 买家备注 | String | true || 
 
 返回
 
