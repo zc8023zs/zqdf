@@ -519,6 +519,7 @@
 | 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
 | shop_id | 店铺id | String | true ||
+| car_id | 车辆id | String | true ||
 
 返回
 
@@ -527,6 +528,10 @@
     "code": 0,
     "msg": "成功",
     "dataSingle": {
+            "versions": "大众上汽大众Polo2017款 1.4TSI cc",
+            "brand_name": "品牌名称",
+            "car_id": 11,
+            "brand_id": "品牌id"
     },
     "dataArray": {
         "pageSize": 0,
