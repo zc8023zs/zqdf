@@ -986,9 +986,10 @@
 | 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
 | token | 用户凭证 | String | true || 
+| shipping_id | 配送方式(1:修理厂,2:收货地址) | int | true || 
 | addrs | 收货地址 | String | true || 
 | coupon_id | 优惠券 | String | true || 
-| goods[] | 商品ids | String[] | true || 
+| goods | 商品ids | String[] | true || 
 | note | 买家备注 | String | true || 
 
 返回
