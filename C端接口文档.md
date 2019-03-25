@@ -622,13 +622,7 @@
         "comment_cnt":"评论数",
         "cart_cnt":"购物车数",
         "goods_desc":"商品介绍",
-        "other_desc":"包装售后",
-        "good_attrs":[
-            {
-                "attr_name":"标题",
-                "attr_value":"值"
-            }
-        ]
+        "other_desc":"包装售后"
     },
     "dataArray": {
         "pageSize": 0,
