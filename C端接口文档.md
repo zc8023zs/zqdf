@@ -611,6 +611,13 @@
         "goods_name":"商品名称",
         "market_price":"商品价格",
         "goods_number":"商品库存",
+        "addr": "湖北省武汉市洪山区金百瑞",
+        "coupons": [
+                    {
+                        "coupon_id": 9,
+                        "mark": "满10.00减1.00"
+                    }
+                ],
         "gallery":[
             {
                 "img_url":"相册地址", 
