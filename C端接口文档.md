@@ -805,6 +805,7 @@
                 "consignee":"收货人姓名",
                 "addr":"完整地址",
                 "mobile":"收货人电话"
+                "is_default":"是否默认"
             }
         ]
     }
