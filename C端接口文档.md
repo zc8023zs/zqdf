@@ -1020,6 +1020,51 @@
     }
 }
 ``` 
+
+## 待支付详情接口
+
+/{os}/user/user_pay_detail
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true || 
+| order_id | 订单id | String | true || 
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "",
+    "dataSingle": {
+        "note": "备注",
+        "total_number": "商品总数",
+        "address": "北京市北京东城区天津市天津河东区湖北省武汉市洪山区金百瑞",
+        "consigne": "收货人姓名",
+        "order_amount": "待支付金额",
+        "bonus_id": "优惠券id",
+        "tel": "收货人手机号",
+        "coupon_mark": "满减描述"
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [
+            {
+                "goods_name": "挡风玻璃",
+                "category_name": "前挡风玻璃",
+                "goods_number": "购买数量",
+                "goods_price": "价格",
+                "goods_thumb": "图片"
+            }
+        ]
+    }
+}
+``` 
 ## 支付
 
 /{os}/user/good_user_buy
