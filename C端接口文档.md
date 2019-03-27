@@ -1299,6 +1299,9 @@
         "address_id":"是收获地址id",
         "consignee":"收货人姓名",
         "mobile":"手机号码",
+        "province_name": "北京市"
+        "city_name": "北京",
+        "district_name": "东城区",
         "province":"收货-省",
         "city":"收货-市",
         "district":"收货-区",
