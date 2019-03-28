@@ -1100,6 +1100,40 @@
     }
 }
 ``` 
+## 订单支付状态接口
+
+/{os}/user/order_pay_status
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true || 
+| order_id  | 订单ID | String | true ||  
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "",
+    "dataSingle": {
+        "pay_status": (0:支付失败,1:支付成功),
+        "address": "地址",
+        "consigne": "收货人姓名",
+        "order_amount": "支付金额",
+        "tel": "电话",
+        "order_id": "订单id"
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": []
+    }
+}
+``` 
 # 个人中心
 ## 个人中心（常规和修理厂）
 /{os}/user/user_index
