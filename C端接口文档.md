@@ -1045,6 +1045,7 @@
         "order_amount": "待支付金额",
         "bonus_id": "优惠券id",
         "tel": "收货人手机号",
+        "repair_name":"修理厂名",
         "coupon_mark": "满减描述"
     },
     "dataArray": {
