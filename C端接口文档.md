@@ -768,7 +768,6 @@
         "dataList": [ 
             "user_id": "修理厂id",
             "icon": "头像",
-            "is_self": "是否自营",
             "user_name":"修理厂名称",
             "addr":"完整地址",
             "distance":"距离（千米）"
