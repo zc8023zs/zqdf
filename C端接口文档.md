@@ -2220,7 +2220,7 @@
 ```
 ## 财务管理页面数据
 
-/{os}/user/user_repair_update_info
+/{os}/user/user_finance_info
 
 输入参数
 
