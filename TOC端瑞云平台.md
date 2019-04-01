@@ -101,6 +101,7 @@
                 "comment_num":"评论数",
                 "distance":"距离",
                 "full_address":"地址",
+                "shop_id":"店铺id"
             }
         ]
     }
