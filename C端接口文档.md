@@ -1833,6 +1833,10 @@
                 "order_amount":"应付款金额",
                 "money_paid":"付款金额",
                 "bonus":"红包金额",
+                "is_credit_del": false,//是否需要销账
+                "goods_amount": "总金额",
+                "is_account": (挂账 1:是 0:否),
+                "good_num": "商品数量",
                 "goods":[
                     {  
                         "goods_thumb":"商品图标",
