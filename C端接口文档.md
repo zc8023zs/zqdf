@@ -1878,6 +1878,7 @@
         "full_address":"收货人地址",
         "repair_name":"修理厂名称",
         "goods_amount":"商品金额",
+        "goods_num":"商品数量",
         "money_paid":"付款金额",
         "bonus":"红包金额", 
         "add_time":"订单生成时间",
