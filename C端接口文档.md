@@ -274,6 +274,89 @@
         ]
     }
 }
+## 车型选择-品牌-车型-1级界面
+
+/{os}/user/brands_first
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| search_name | 搜索品牌 | String | false ||
+返回
+
+``` json
+{
+    "code":0,
+    "msg":"",
+    "dataSingle":"",
+    "dataArray":{
+        "pageSize":0,
+        "pageIndex":0,
+        "pageCount":0,
+        "dataCount":0,
+        "dataList":[
+            {
+                "brands":"阿尔法.罗米欧",
+                "initial":"A",              //分类ABCDEFG
+                "brand_name":"阿尔法.罗米欧",//名称
+                "brand_logo":null,          //logo全路径
+                "brand_id":3333             //品牌id
+            }
+        ]
+    }
+}
+```
+## 车型选择-品牌-车型-2级界面
+
+/{os}/user/brands_second
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| brand_id | 品牌id | Integer | true ||
+返回
+
+``` json
+{
+    "code":0,
+    "msg":"",
+    "dataSingle":{
+        "brand_level":1,                                    
+        "brand_name":"黑豹",                                  //1级品牌名称
+        "parent_id":0,                                        
+        "brand_id":3361                                       //1级的品牌id
+    },
+    "dataArray":{
+        "pageSize":0,
+        "pageIndex":0,
+        "pageCount":0,
+        "dataCount":0,
+        "dataList":[
+            {
+                "brand_level":2,
+                "children":[                                    //子节点
+                    {
+                        "brand_level":3,
+                        "parent_id":1608,                       
+                        "brand_name":"富桑黑豹轻型客车",         //品牌名称
+                        "brand_id":1609                         //品牌id
+                    },
+                    {
+                        "brand_level":3,
+                        "parent_id":1608,
+                        "brand_name":"富桑黑豹轻型货车",
+                        "brand_id":1610
+                    }
+                ],
+                "parent_id":3361,
+                "brand_name":"黑豹(富桑)",                      //品牌名称
+                "brand_id":1608                                 //品牌id
+            }
+        ]
+    }
+}
 ```
 ## 车型选择-排量
 
