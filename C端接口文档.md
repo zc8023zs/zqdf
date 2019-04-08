@@ -2702,7 +2702,7 @@
 
 ## OCR扫描
 
-/{os}/vin/ocr_info
+/{os}//ocr/ocr_info
 
 
 输入参数
