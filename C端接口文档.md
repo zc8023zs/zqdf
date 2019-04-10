@@ -2762,3 +2762,37 @@
     }
 }
 ```
+## vin查询
+
+/{os}//ocr/vin_type
+
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||    
+| shop_id | 店铺id | int | true ||  
+| vin | vin | String | true ||  
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+    
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [{
+                id:"车型id",
+                version_name:"车型名称"
+        ]
+    }
+}
+```
