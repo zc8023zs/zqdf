@@ -32,7 +32,7 @@
 ```
 ## 用户登录
 
-/{os}/user/login
+/{os}/user/applogin
 
 输入参数
 
