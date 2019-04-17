@@ -355,7 +355,8 @@
         "brand_level":1,                                    
         "brand_name":"黑豹",                                  //1级品牌名称
         "parent_id":0,                                        
-        "brand_id":3361                                       //1级的品牌id
+        "brand_id":3361,                                       //1级的品牌id
+        "brand_logo": "图标"
     },
     "dataArray":{
         "pageSize":0,
@@ -370,18 +371,21 @@
                         "brand_level":3,
                         "parent_id":1608,                       
                         "brand_name":"富桑黑豹轻型客车",         //品牌名称
-                        "brand_id":1609                         //品牌id
+                        "brand_id":1609,                         //品牌id
+                        "brand_logo": "图标"
                     },
                     {
                         "brand_level":3,
                         "parent_id":1608,
                         "brand_name":"富桑黑豹轻型货车",
-                        "brand_id":1610
+                        "brand_id":1610,
+                        "brand_logo": "图标"
                     }
                 ],
                 "parent_id":3361,
                 "brand_name":"黑豹(富桑)",                      //品牌名称
-                "brand_id":1608                                 //品牌id
+                "brand_id":1608,                               //品牌id
+                "brand_logo": "图标"
             }
         ]
     }
