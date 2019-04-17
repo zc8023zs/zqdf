@@ -676,6 +676,8 @@
 | shop_id | 店铺id | String | true ||
 | cat_id | 分类id | String | true ||
 | car_id | 车辆id | String | true ||
+| page | 页 | int | true || 
+| size | 条 | int | true ||  
 
 返回
 
