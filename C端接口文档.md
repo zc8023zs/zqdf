@@ -1938,6 +1938,7 @@
         "dataList": [  
             {
                 "order_id": "订单id",
+                "shop_id": "店铺id",
                 "order_sn": "订单号",
                 "add_time": "下单时间",
                 "status_name": "状态名称",
