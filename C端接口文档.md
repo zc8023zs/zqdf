@@ -1953,6 +1953,8 @@
                 "good_num": "商品数量",
                 "goods":[
                     {  
+                        "goods_id":"原始商品id",
+                        "shop_id":"店铺id",
                         "goods_thumb":"商品图标",
                         "goods_name":"商品名称",
                         "market_price":"商品价格",
