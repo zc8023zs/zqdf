@@ -596,6 +596,8 @@
 | --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
 | shop_id | 店铺id | String | true ||
 | good_id | 商品id | String | false |为空查所有否则关联商品|
+| page | 页 | int | true || 
+| size | 条 | int | true ||  
 
 返回
 
@@ -1271,6 +1273,7 @@
     "dataSingle": { 
         "icon":"头像",
         "user_name":"名称",
+        "user_type":"普通用户=1,修理厂=2,企业用户=3",
         "unpay_cnt":"待付款数",
         "uninstall_cnt":"待安装数",
         "uncomment_cnt":"待评价数",
