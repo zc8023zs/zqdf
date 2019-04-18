@@ -2670,6 +2670,7 @@
         "dataList": [  
             {
                 "order_sn":"订单号",
+                "shop_id":"店铺id",
                 "order_status":"状态",
                 "order_status_str":"状态名称",
                 "pay_time":"支付时间",
