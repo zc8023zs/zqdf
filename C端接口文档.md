@@ -2029,6 +2029,34 @@
     }
 }
 ```
+## 确认收货
+/{os}/user/user_order_ok
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true || 
+| order_id | 订单id | int | true ||
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {  
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [ 
+        ]
+    }
+}
+```
 ## 取消订单
 
 /{os}/user/user_order_cancel
@@ -2309,6 +2337,45 @@
     }
 }
 ```
+## 修理厂资料
+
+/{os}/user/user_repair_detail
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+        "icon":"修理厂头像",
+        "shop_name":"店铺名称",
+        "shop_tel":"店铺电话",
+        "lat":"定位维度",
+        "lng":"定位经度",
+        "address":"详细地址",
+        "business_license":"营业执照",
+        "province":"省份code",
+        "city":"市code",
+        "code":"区code",
+        "location":"定位地址"
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [ 
+        ]
+    }
+}
+```
 ## 编辑修理厂资料
 
 /{os}/user/user_repair_update_info
@@ -2327,6 +2394,10 @@
 | business_license | 营业执照 | String | true || 
 | idcard1 | 法人身份证正面 | String | true || 
 | idcard2 | 法人身份证反面 | String | true || 
+| province | 省份code | String | true || 
+| city | 市code | String | true || 
+| code | 区code | String | true || 
+| location | 定位地址 | String | true || 
 
 返回
 
