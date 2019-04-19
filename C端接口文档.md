@@ -1985,6 +1985,7 @@
                 "goods_amount": "总金额",
                 "is_account": (挂账 1:是 0:否),
                 "good_num": "商品数量",
+                "installer":"是否安装",   //1= 安装 0=不安装
                 "goods":[
                     {  
                         "goods_id":"原始商品id",
