@@ -1126,7 +1126,43 @@
     "code": 0,
     "msg": "成功",
     "dataSingle": {
-        "order_id":"订单号",
+        "order_id":"订单id",
+        "order_price":"订单金额"
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [ 
+        ]
+    }
+}
+``` 
+## 立即支付
+
+/{os}/user/buy_now
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true || 
+| shipping_id | 配送方式(1:修理厂,2:收货地址) | int | true || 
+| addrs | 收货地址id | String | true || 
+| coupon_id | 优惠券 | String | true || 
+| goods_id | 商品id | String | true || 
+| goods_number | 商品数量 | String | true || 
+| installer | 是否安装 | String | true || 
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+        "order_id":"订单id",
         "order_price":"订单金额"
     },
     "dataArray": {
