@@ -2093,6 +2093,35 @@
     }
 }
 ```
+## 订单确认收货/确认完成
+
+/{os}/user/complete_order_info
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true || 
+| order_id | 订单id | int | true ||
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {  
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [ 
+        ]
+    }
+}
+```
 ## 取消订单
 
 /{os}/user/user_order_cancel
