@@ -92,6 +92,34 @@
 }
 ```
 # C端店铺首页
+## 取用户最新的店铺id
+
+/{os}/user/user_shop
+
+输入参数
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |
+| token | 用户凭证 | String | true ||
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "成功",
+    "dataSingle": {
+        "shop_id": "0"       //如果0提示跳转平台首页 非0写入cookie
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": []
+    }
+}
+```
 ## 用户默认车辆信息
 
 /{os}/user/car_default
