@@ -29,7 +29,42 @@
 }
 ```
 
-## 首页商品列表(产品推荐)
+## 首页商品列表
+
+/{os}/platform/order_list_index
+
+| 参数名 | 描述 | 类型 | 必填 | 默认 | 说明 |
+| --------- | ---------- | ------ | ---- | ---- | --------------------------------------------- |  
+| search_key | 调用分词取分词id | String | false ||   先调用分词，然后直接传分页之后的id
+
+返回
+
+``` json
+{
+    "code": 0,
+    "msg": "",
+    "dataSingle": {
+    },
+    "dataArray": {
+        "pageSize": 0,
+        "pageIndex": 0,
+        "pageCount": 0,
+        "dataCount": 0,
+        "dataList": [
+            {
+                "goods_id":"商品id",
+                "goods_thumb":"商品logo",
+                "goods_name":"商品标题",
+                "shop_id":"店铺id",
+                "shop_name":"店铺名称",
+                "shop_type":"是否自营"
+            }
+        ]
+    }
+}
+```
+
+## 产品推荐
 
 /{os}/platform/order_list
 
